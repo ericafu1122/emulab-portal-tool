@@ -13,7 +13,7 @@ import geni.rspec.pg as rspec
 request = portal.context.makeRequestRSpec()
  
 # Add a XenVM (named "node") to the request
-node = request.RawPC("node")
+node = request.XenVM("node")
 
 # Write the request in RSpec format
 portal.context.printRequestRSpec()
